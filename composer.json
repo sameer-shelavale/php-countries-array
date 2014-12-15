@@ -1,0 +1,16 @@
+{
+    "name": "sameer-shelavale/php-countries-array",
+    "description": "PHP class to get array of countries names with ISO_3166-1 alpha-2, alpha-3, numeric codes, ISD codes and continent",
+    "keywords": ["PHP countries array", "countries array", "ISO_3166-1", "alpha-2", "alpha-3", "continent", "ISD Codes", "List of countries"],
+    "minimum-stability": "stable",
+    "license": "AGPL3.0",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "authors": [
+        {
+            "name": "Sameer Shelavale",
+            "email": "samiirds@gmail.com"
+        }
+    ]
+}
