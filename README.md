@@ -54,5 +54,5 @@ $countries = CountryArray::get( null, 'a2' ); // return array of alpha2 codes
 ```
 
 
-IMP Note:
+##IMP Note
 Do not use ISD code(isd) and continent as key fields, as there are multiple records for them
