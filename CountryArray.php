@@ -290,7 +290,7 @@ class CountryArray{
 
         $result = array();
         //copy each requested field from the countries array
-        foreach( SELF::$countries as $k => $country ){
+        foreach( self::$countries as $k => $country ){
             if( $keyField ){
                 $result[ $country[ $keyField ] ] = $country[ $requestedField ];
             }else{
@@ -328,7 +328,7 @@ class CountryArray{
         }
         $result = array();
         //copy each requested field from the countries array
-        foreach( SELF::$countries as $k => $country ){
+        foreach( self::$countries as $k => $country ){
             $tmp = array( );
             foreach( $requestedFields as $field ){
                 $tmp[ $field ] = $country[ $field ];
