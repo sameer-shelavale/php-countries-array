@@ -17,8 +17,9 @@
  * License: AGPL3, You should keep Package name, Class name, Author name, Email and website credits.
  * Copyrights (C) Sameer Shelavale
  *******************************************************************************************************/
+namespace SameerShelavale\PhpCountriesArray;
 
-class CountryArray{
+class CountriesArray{
 
     public static $countries = array(
         "AF" => array( 'alpha2'=>'AF', 'alpha3'=>'AFG', 'num'=>'004', 'isd'=> '93', "name" => "Afghanistan", "continent" => "Asia", ),

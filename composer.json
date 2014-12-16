@@ -12,5 +12,13 @@
             "name": "Sameer Shelavale",
             "email": "samiirds@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {
+            "SameerShelavale\\PhpCountriesArray\\" : "src/"
+        },
+        "psr-4": {
+            "SameerShelavale\\PhpCountriesArray\\" : "src/"
+        }
+    }
 }

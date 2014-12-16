@@ -5,20 +5,22 @@
  * Date: 12/15/14
  * Time: 8:50 PM
  */
-include( "../CountryArray.php" );
+use SameerShelavale\PhpCountriesArray\CountriesArray;
+include( "../src/CountriesArray.php" );
 
 
-$countries = CountryArray::get();
+
+$countries = CountriesArray::get();
 var_dump( $countries );
 
 
-$countries = CountryArray::get2d( 'alpha3' );
+$countries = CountriesArray::get2d( 'alpha3' );
 var_dump( $countries );
 
 
-$countries = CountryArray::get2d( 'alpha3', array( 'name', 'isd', 'continent' ) );
+$countries = CountriesArray::get2d( 'alpha3', array( 'name', 'isd', 'continent' ) );
 var_dump( $countries );
 
 
-$countries = CountryArray::get2d( null, array( 'name', 'num', 'isd', 'continent' ) );
+$countries = CountriesArray::get2d( null, array( 'name', 'num', 'isd', 'continent' ) );
 var_dump( $countries );
