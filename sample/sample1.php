@@ -12,13 +12,13 @@ $countries = CountryArray::get();
 var_dump( $countries );
 
 
-$countries = CountryArray::get2d( 'a3' );
+$countries = CountryArray::get2d( 'alpha3' );
 var_dump( $countries );
 
 
-$countries = CountryArray::get2d( 'a3', array( 'name', 'isd', 'continent' ) );
+$countries = CountryArray::get2d( 'alpha3', array( 'name', 'isd', 'continent' ) );
 var_dump( $countries );
 
 
-$countries = CountryArray::get2d( null, array( 'name', 'n', 'isd', 'continent' ) );
+$countries = CountryArray::get2d( null, array( 'name', 'num', 'isd', 'continent' ) );
 var_dump( $countries );
