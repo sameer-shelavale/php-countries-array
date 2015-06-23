@@ -49,8 +49,8 @@ $countries = CountryArray::get( null, 'alpha2' ); // return array of alpha2 code
 
 Get 2d array
 ```
-$countries = CountryArray::get( null, 'name' ); // return array of country names
-$countries = CountryArray::get( null, 'alpha2' ); // return array of alpha2 codes
+$countries = CountryArray::get2d( null, 'name' ); // return array of country names
+$countries = CountryArray::get2d( null, 'alpha2' ); // return array of alpha2 codes
 ```
 
 
