@@ -30,27 +30,27 @@ Add the package to your composer.json and run composer update.
 Get simple key-value array by default it returns alpha2 => name pairs
 
 ```
-$countries = CountryArray::get();
+$countries = CountriesArray::get();
 ```
 
 Get key values pairs
 
 ```
-$countries = CountryArray::get( 'alpha2', 'name' ); // returns alpha2->name array
-$countries = CountryArray::get( 'num', 'alpha3' ); // return numeric-codes->alpha3 array
-$countries = CountryArray::get( 'num', 'name' ); // return numeric-codes->name array
+$countries = CountriesArray::get( 'alpha2', 'name' ); // returns alpha2->name array
+$countries = CountriesArray::get( 'num', 'alpha3' ); // return numeric-codes->alpha3 array
+$countries = CountriesArray::get( 'num', 'name' ); // return numeric-codes->name array
 ```
 
 Get only values without keys
 ```
-$countries = CountryArray::get( null, 'name' ); // return array of country names
-$countries = CountryArray::get( null, 'alpha2' ); // return array of alpha2 codes
+$countries = CountriesArray::get( null, 'name' ); // return array of country names
+$countries = CountriesArray::get( null, 'alpha2' ); // return array of alpha2 codes
 ```
 
 Get 2d array
 ```
-$countries = CountryArray::get2d( null, 'name' ); // return array of country names
-$countries = CountryArray::get2d( null, 'alpha2' ); // return array of alpha2 codes
+$countries = CountriesArray::get2d( null, 'name' ); // return array of country names
+$countries = CountriesArray::get2d( null, 'alpha2' ); // return array of alpha2 codes
 ```
 
 
