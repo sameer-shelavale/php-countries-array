@@ -259,7 +259,7 @@ class CountriesArray{
         "UZ" => array( 'alpha2'=>'UZ', 'alpha3'=>'UZB', 'num'=>'860', 'isd'=> '998', "name" => "Uzbekistan", "continent" => "Asia"),
         "VU" => array( 'alpha2'=>'VU', 'alpha3'=>'VUT', 'num'=>'548', 'isd'=> '678', "name" => "Vanuatu", "continent" => "Oceania"),
         "VE" => array( 'alpha2'=>'VE', 'alpha3'=>'VEN', 'num'=>'862', 'isd'=> '58', "name" => "Venezuela", "continent" => "South America"),
-        "VN" => array( 'alpha2'=>'VN', 'alpha3'=>'VNM', 'num'=>'704', 'isd'=> '84', "name" => "Viet Nam", "continent" => "Asia"),
+        "VN" => array( 'alpha2'=>'VN', 'alpha3'=>'VNM', 'num'=>'704', 'isd'=> '84', "name" => "Vietnam", "continent" => "Asia"),
         "VG" => array( 'alpha2'=>'VG', 'alpha3'=>'VGB', 'num'=>'092', 'isd'=> '1284', "name" => "Virgin Islands, British", "continent" => "North America"),
         "VI" => array( 'alpha2'=>'VI', 'alpha3'=>'VIR', 'num'=>'850', 'isd'=> '1430', "name" => "Virgin Islands, U.S.", "continent" => "North America"),
         "WF" => array( 'alpha2'=>'WF', 'alpha3'=>'WLF', 'num'=>'876', 'isd'=> '681', "name" => "Wallis and Futuna", "continent" => "Oceania"),
