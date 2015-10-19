@@ -202,7 +202,7 @@ class CountriesArray{
         "PR" => array( 'alpha2'=>'PR', 'alpha3'=>'PRI', 'num'=>'630', 'isd'=> '1', "name" => "Puerto Rico", "continent" => "North America"),
         "QA" => array( 'alpha2'=>'QA', 'alpha3'=>'QAT', 'num'=>'634', 'isd'=> '974', "name" => "Qatar", "continent" => "Asia"),
         "RE" => array( 'alpha2'=>'RE', 'alpha3'=>'REU', 'num'=>'638', 'isd'=> '262', "name" => "Reunion", "continent" => "Africa"),
-        "RO" => array( 'alpha2'=>'RO', 'alpha3'=>'ROM', 'num'=>'642', 'isd'=> '40', "name" => "Romania", "continent" => "Europe"),
+        "RO" => array( 'alpha2'=>'RO', 'alpha3'=>'ROU', 'num'=>'642', 'isd'=> '40', "name" => "Romania", "continent" => "Europe"),
         "RU" => array( 'alpha2'=>'RU', 'alpha3'=>'RUS', 'num'=>'643', 'isd'=> '7', "name" => "Russian Federation", "continent" => "Europe"),
         "RW" => array( 'alpha2'=>'RW', 'alpha3'=>'RWA', 'num'=>'646', 'isd'=> '250', "name" => "Rwanda", "continent" => "Africa"),
         "SH" => array( 'alpha2'=>'SH', 'alpha3'=>'SHN', 'num'=>'654', 'isd'=> '290', "name" => "Saint Helena", "continent" => "Africa"),
