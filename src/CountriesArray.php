@@ -343,5 +343,58 @@ class CountriesArray{
         return $result;
     }
 
+    /*
+    * function getFromContinent()
+    * @param $key - key field for the array of countries, set it to null if you want array without named indices
+    * @param $requestedField - name of the field to be fetched in value part of array
+    * @param $continent - name of continent to use as filter
+    * @returns array contained key=>value pairs of the requested key and field
+    * Works exactly as get() above
+    * But takes an extra param to enable filtering by continent
+    *
+    */
+    public static function getFromContinent( $keyField = 'alpha2', $requestedField = 'name', $continent=null ) {
+        $supportedFields = array( 'alpha2', 'alpha3', 'num', 'isd', 'name', 'continent' );
+        $supportedContinents = array( 'Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'Oceania', 'South America' );
+
+        //check if field to be used as array key is passed
+        if( !in_array( $keyField, $supportedFields ) ){
+            $keyField = null;
+        }
+
+        //check if field to be used as continent is passed
+        if( !in_array( $continent, $supportedContinents ) ){
+            $continent = null;
+        }
+
+        //check if the $requestedField is supported or not
+        if( !in_array( $requestedField, $supportedFields ) ){
+            $requestedField = 'name'; //return country name if invalid/unsupported field name is request
+        }
+
+        $result = array();
+        //copy each requested field from the countries array
+        foreach( self::$countries as $k => $country ){
+            if( $keyField ){
+                if ( $continent ) {
+                    if ( $country['continent'] == $continent ) {
+                        $result[ $country[ $keyField ] ] = $country[ $requestedField ];
+                    }                    
+                } else {
+                    $result[ $country[ $keyField ] ] = $country[ $requestedField ];
+                }
+            } else {
+                if ( $continent ) {
+                    if ( $country['continent'] == $continent ) {
+                        $result[] = $country[ $requestedField ];
+                    }                    
+                } else {
+                    $result[] = $country[ $requestedField ];
+                }
+            }
+        }
+        return $result;
+    }
+
 }
 
