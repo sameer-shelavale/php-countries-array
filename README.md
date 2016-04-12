@@ -53,6 +53,13 @@ $countries = CountriesArray::get2d( null, 'name' ); // return array of country n
 $countries = CountriesArray::get2d( null, 'alpha2' ); // return array of alpha2 codes
 ```
 
+Get countries filtered by continent
+
+```
+$countries = CountriesArray::getFromContinent( 'alpha2', 'name', 'Africa' ); // returns alpha2->name array of countries from Africa
+$countries = CountriesArray::getFromContinent( 'num', 'alpha3', 'Asia' ); // return numeric-codes->alpha3 array of countries from Asia
+$countries = CountriesArray::getFromContinent( 'num', 'name', 'Europe' ); // return numeric-codes->name array of countries from Europe
+```
 
 ##IMP Note
 Do not use ISD code(isd) and continent as key fields, as there are multiple records for them
