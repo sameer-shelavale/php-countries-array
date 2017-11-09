@@ -266,7 +266,8 @@ class CountriesArray{
         "EH" => array( 'alpha2'=>'EH', 'alpha3'=>'ESH', 'num'=>'732', 'isd'=> '212', "name" => "Western Sahara", "continent" => "Africa"),
         "YE" => array( 'alpha2'=>'YE', 'alpha3'=>'YEM', 'num'=>'887', 'isd'=> '967', "name" => "Yemen", "continent" => "Asia"),
         "ZM" => array( 'alpha2'=>'ZM', 'alpha3'=>'ZMB', 'num'=>'894', 'isd'=> '260', "name" => "Zambia", "continent" => "Africa"),
-        "ZW" => array( 'alpha2'=>'ZW', 'alpha3'=>'ZWE', 'num'=>'716', 'isd'=> '263', "name" => "Zimbabwe", "continent" => "Africa")
+        "ZW" => array( 'alpha2'=>'ZW', 'alpha3'=>'ZWE', 'num'=>'716', 'isd'=> '263', "name" => "Zimbabwe", "continent" => "Africa"),
+        "XK" => array( 'alpha2'=>'XK', 'alpha3'=>'KOS', 'num'=>'383', 'isd'=> '383', "name" => "Kosovo", "continent" => "Europe", ),
     );
 
 
