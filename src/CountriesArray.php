@@ -266,10 +266,53 @@ class CountriesArray{
         "EH" => array( 'alpha2'=>'EH', 'alpha3'=>'ESH', 'num'=>'732', 'isd'=> '212', "name" => "Western Sahara", "continent" => "Africa"),
         "YE" => array( 'alpha2'=>'YE', 'alpha3'=>'YEM', 'num'=>'887', 'isd'=> '967', "name" => "Yemen", "continent" => "Asia"),
         "ZM" => array( 'alpha2'=>'ZM', 'alpha3'=>'ZMB', 'num'=>'894', 'isd'=> '260', "name" => "Zambia", "continent" => "Africa"),
-        "ZW" => array( 'alpha2'=>'ZW', 'alpha3'=>'ZWE', 'num'=>'716', 'isd'=> '263', "name" => "Zimbabwe", "continent" => "Africa"),
+        "ZW" => array( 'alpha2'=>'ZW', 'alpha3'=>'ZWE', 'num'=>'716', 'isd'=> '263', "name" => "Zimbabwe", "continent" => "Africa")
+    );
+
+    /**
+     * Non iso countries
+     * @var array
+     */
+    public static $countries_non_iso = array(
         "XK" => array( 'alpha2'=>'XK', 'alpha3'=>'KOS', 'num'=>'383', 'isd'=> '383', "name" => "Kosovo", "continent" => "Europe", ),
     );
 
+    /**
+     * CountriesArray constructor.
+     * @param boolean $iso
+     * @author Paul Bönisch - <paul.boenisch@umwerk.net>
+     */
+    public function __construct($iso)
+    {
+        if(!$iso){
+            self::$countries = array_merge(self::$countries, self::$countries_non_iso);
+        }
+    }
+
+    /**
+     * Returns countries array depending on iso flag
+     * @param bool $iso
+     * @return array
+     * @author Paul Bönisch - <paul.boenisch@umwerk.net>
+     */
+    public static function getCountries($iso = true){
+        $result = self::$countries;
+        if(!$iso){
+            $result = array_merge($result, self::$countries_non_iso);
+        }
+
+        return $result;
+    }
+
+    /**
+     * Returns instance of ContriesArray with $iso property according to $value parameter
+     * @param $value
+     * @return CountriesArray
+     * @author Paul Bönisch - <paul.boenisch@umwerk.net>
+     */
+    public static function iso($value){
+        return new CountriesArray($value);
+    }
 
     /*
      * function get()
@@ -380,7 +423,7 @@ class CountriesArray{
                 if ( $continent ) {
                     if ( $country['continent'] == $continent ) {
                         $result[ $country[ $keyField ] ] = $country[ $requestedField ];
-                    }                    
+                    }
                 } else {
                     $result[ $country[ $keyField ] ] = $country[ $requestedField ];
                 }
@@ -388,7 +431,7 @@ class CountriesArray{
                 if ( $continent ) {
                     if ( $country['continent'] == $continent ) {
                         $result[] = $country[ $requestedField ];
-                    }                    
+                    }
                 } else {
                     $result[] = $country[ $requestedField ];
                 }
