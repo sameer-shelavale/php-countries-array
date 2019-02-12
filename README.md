@@ -33,6 +33,11 @@ Get simple key-value array by default it returns alpha2 => name pairs
 $countries = CountriesArray::get();
 ```
 
+Include non iso countries:
+```
+$countries = CountriesArray::iso(false)->get();
+```
+
 Get key values pairs
 
 ```
