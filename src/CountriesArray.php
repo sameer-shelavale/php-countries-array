@@ -179,7 +179,6 @@ class CountriesArray{
         "NR" => array( 'alpha2'=>'NR', 'alpha3'=>'NRU', 'num'=>'520', 'isd'=> '674', "name" => "Nauru", "continent" => "Oceania"),
         "NP" => array( 'alpha2'=>'NP', 'alpha3'=>'NPL', 'num'=>'524', 'isd'=> '977', "name" => "Nepal", "continent" => "Asia"),
         "NL" => array( 'alpha2'=>'NL', 'alpha3'=>'NLD', 'num'=>'528', 'isd'=> '31', "name" => "Netherlands", "continent" => "Europe"),
-        "AN" => array( 'alpha2'=>'AN', 'alpha3'=>'ANT', 'num'=>'530', 'isd'=> '599', "name" => "Netherlands Antilles", "continent" => "North America"),
         "NC" => array( 'alpha2'=>'NC', 'alpha3'=>'NCL', 'num'=>'540', 'isd'=> '687', "name" => "New Caledonia", "continent" => "Oceania"),
         "NZ" => array( 'alpha2'=>'NZ', 'alpha3'=>'NZL', 'num'=>'554', 'isd'=> '64', "name" => "New Zealand", "continent" => "Oceania"),
         "NI" => array( 'alpha2'=>'NI', 'alpha3'=>'NIC', 'num'=>'558', 'isd'=> '505', "name" => "Nicaragua", "continent" => "North America"),
