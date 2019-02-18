@@ -3,7 +3,7 @@
     "description": "PHP class to get array of countries names with ISO_3166-1 alpha-2, alpha-3, numeric codes, ISD codes and continent",
     "keywords": ["PHP countries array", "countries array", "ISO_3166-1", "alpha-2", "alpha-3", "continent", "ISD Codes", "List of countries"],
     "minimum-stability": "stable",
-    "license": "AGPL3.0",
+    "license": "AGPL-3.0-or-later",
     "require": {
         "php": ">=5.3.0"
     },
