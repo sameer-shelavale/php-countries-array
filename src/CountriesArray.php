@@ -10,8 +10,6 @@
  *      5) ISD code for country
  *      6) continent
  *
- * Author : Sameer Shelavale
- * Email : samiirds@gmail.com
  * License: AGPL3, You should keep Package name, Class name, Author name, Email and website credits.
  * Copyrights (C) Sameer Shelavale
  *******************************************************************************************************/
